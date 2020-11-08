@@ -23,6 +23,29 @@ export default function Home() {
         <div className="home-content">
           <div className="main-content">
             <Search />
+
+            <div className="cards">
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>Trading Playground</h2>
+              <h2>hi</h2>
+            </div>
           </div>
 
           <div className="additional-content">

@@ -1,5 +1,6 @@
 $main-width: 70%;
 $left-width: 30%;
+$space-between-header-and-content: 3rem;
 
 .home {
   padding-top: $header-height;
@@ -8,12 +9,20 @@ $left-width: 30%;
     width: 100%;
     height: calc(100vh - #{$header-height});
     display: flex;
-    padding-top: 3rem;
+    padding-top: $space-between-header-and-content;
 
     .main-content {
       width: $main-width;
       height: 100%;
       padding-right: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .cards {
+        background: gray;
+        height: 120vh;
+      }
     }
 
     .additional-content {
@@ -61,7 +70,6 @@ $left-width: 30%;
             background: $dark-green;
             display: flex;
             align-items: center;
-            overflow: hidden;
             cursor: pointer;
             justify-content: space-between;
             padding: 0 1rem;
@@ -87,6 +95,7 @@ $left-width: 30%;
         border: 2px solid $dark-green;
         border-radius: 10px;
         padding: 1rem 1.2rem;
+        box-shadow: 0 0 2px 2px $dark-green;
 
         h3,
         h4 {
