@@ -24,9 +24,9 @@ $left-width: 30%;
       flex-direction: column;
 
       .training-ground {
-        max-width: 368px;
+        max-width: 391px;
         min-width: 250px;
-        max-height: 96px;
+        max-height: 102px;
         border-radius: 10px;
         box-shadow: 0 2px 30px -10px gray;
         transition: box-shadow 0.3s;
@@ -84,6 +84,9 @@ $left-width: 30%;
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
+        border: 2px solid $dark-green;
+        border-radius: 10px;
+        padding: 1rem 1.2rem;
 
         h3,
         h4 {
