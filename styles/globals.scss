@@ -1,0 +1,28 @@
+@import "./variables.scss";
+@import "./home.scss";
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap";
+@import "https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap";
+@import "./component/header.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
