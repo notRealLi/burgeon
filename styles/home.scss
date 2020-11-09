@@ -5,28 +5,46 @@ $space-between-header-and-content: 3rem;
 .home {
   padding-top: $header-height;
 
-  .home-content {
-    width: 100%;
-    height: calc(100vh - #{$header-height});
-    display: flex;
-    padding-top: $space-between-header-and-content;
-
-    .main-content {
-      width: $main-width;
-      height: 100%;
-      padding-right: 3rem;
+  .container {
+    .home-content {
+      width: 100%;
+      // height: calc(100vh - #{$header-height});
+      height: fit-content;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      padding-top: $space-between-header-and-content;
 
-      .cards {
-        background: gray;
-        height: 120vh;
+      .main-content {
+        width: $main-width;
+        max-width: 800px;
+        height: fit-content;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .search-bar {
+          position: sticky;
+          top: calc(#{$header-height} + #{$space-between-header-and-content});
+          width: 100%;
+          z-index: 2;
+        }
+
+        .cards {
+          margin-top: 2rem;
+
+          .card {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+        }
       }
     }
 
     .additional-content {
-      width: calc(100% - #{$main-width});
+      position: fixed;
+      left: 65%;
+      top: calc(#{$header-height} + #{$space-between-header-and-content});
+      //width: calc(100% - #{$main-width});
       min-width: 360px;
       height: 100%;
       display: flex;
@@ -118,6 +136,7 @@ $space-between-header-and-content: 3rem;
           align-items: center;
 
           a {
+            font-size: 0.8rem;
             color: $dark-green;
             text-decoration: underline;
             cursor: pointer;
@@ -136,7 +155,7 @@ $space-between-header-and-content: 3rem;
       }
 
       .other {
-        margin-top: 3rem;
+        margin-top: 1.8rem;
         padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
